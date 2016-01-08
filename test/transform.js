@@ -5,16 +5,14 @@ const assert = require('assert')
 const transform = require('../lib/transform')
 const fixture = require('./_fixture')
 
-describe('Babel Node Pack', () => {
-  describe('Transform', () => {
-    it('fixture: require', () => {
-      test('require')
-    })
+describe('Transform', () => {
+  it('fixture: require', () => {
+    test('require')
+  })
 
-    it('fixture: import', () => {
-      const result = test('import')
-      assert(~result.code.indexOf(`subrequire('./relative')`))
-    })
+  it('fixture: import', () => {
+    const result = test('import')
+    assert(~result.code.indexOf(`subrequire('./relative')`))
   })
 })
 

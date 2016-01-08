@@ -5,22 +5,16 @@
 const transform = require('../lib/transform-cache')
 const fixture = require('./_fixture')
 
-before(() => {
-  return require('../lib/cache').rimraf()
-})
+describe('Transform Cache', () => {
+  describe('fixture: require', () => {
+    const hash = Math.random().toString(36).slice(2)
 
-describe('Babel Node Pack', () => {
-  describe('Transform Cache', () => {
-    describe('fixture: require', () => {
-      const hash = Math.random().toString(36).slice(2)
+    it('should transform it', () => {
+      return test('require', hash)
+    })
 
-      it('should transform it', () => {
-        return test('require', hash)
-      })
-
-      it('should transform from cache', () => {
-        return test('require', hash)
-      })
+    it('should transform from cache', () => {
+      return test('require', hash)
     })
   })
 })

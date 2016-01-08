@@ -1,0 +1,5 @@
+require('./folder')
+require('./folder/')
+require('./folder/index.js')
+require('./file')
+require('./file.js')
