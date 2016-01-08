@@ -15,6 +15,12 @@ This differs from webpack/browserify in that:
 - It's much simpler
 - Only uses babel
 - Does not parse `node_modules` - it assumes modules will still be available
+- Only supports CommonJS build outputs
+
+## Caveats
+
+- `__dirname` and `__filename` are not supported
+- Dynamic requires like `require('./' + 'file')` are not supported
 
 ## API
 
