@@ -5,6 +5,10 @@
 const transform = require('../lib/transform-cache')
 const fixture = require('./_fixture')
 
+before(() => {
+  return require('../lib/cache').rimraf()
+})
+
 describe('Transform Cache', () => {
   describe('fixture: require', () => {
     const hash = Math.random().toString(36).slice(2)

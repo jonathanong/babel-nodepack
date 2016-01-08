@@ -1,6 +1,6 @@
 {
   "name": "babel-nodepack",
-  "description": "",
+  "description": "A babel bundler for node.js",
   "version": "0.0.0",
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
   "license": "MIT",
@@ -24,7 +24,6 @@
     "eslint-plugin-react": "3",
     "eslint-plugin-standard": "1",
     "ghooks": "1",
-    "lodash": "^3.10.1",
     "mocha": "2",
     "nyc": "5"
   },
@@ -38,7 +37,11 @@
       "pre-push": "npm run lint"
     }
   },
-  "keywords": [],
+  "keywords": [
+    "babel",
+    "pack",
+    "bundle"
+  ],
   "files": [
     "lib"
   ],
