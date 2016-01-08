@@ -1,0 +1,9 @@
+{
+  "relatives": [
+    "../outside",
+    "./relative"
+  ],
+  "modules": [
+    "module"
+  ]
+}

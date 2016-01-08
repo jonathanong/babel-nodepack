@@ -1,0 +1,10 @@
+{
+  "relatives": [
+    "./relative"
+  ],
+  "modules": [
+    "val",
+    "all",
+    "x"
+  ]
+}

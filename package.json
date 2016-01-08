@@ -5,16 +5,23 @@
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
   "license": "MIT",
   "repository": "jonathanong/babel-nodepack",
-  "dependencies": {},
+  "dependencies": {
+    "babel-core": "^6.4.0",
+    "bluebird": "^3.1.1",
+    "lodash": "^3.10.1",
+    "mz": "^2.1.0"
+  },
   "devDependencies": {
     "babel-core": "^6.4.0",
     "babel-eslint": "4",
+    "babel-preset-es2015": "^6.3.13",
     "codecov": "1",
     "eslint": "1",
     "eslint-config-jongleberry": "1",
     "eslint-plugin-react": "3",
     "eslint-plugin-standard": "1",
     "ghooks": "1",
+    "lodash": "^3.10.1",
     "mocha": "2",
     "nyc": "5"
   },

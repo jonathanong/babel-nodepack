@@ -11,5 +11,4 @@ node_modules
 .nyc_output
 coverage
 
-# cache
-.eslintcache
+test/fixtures/*/result.js
