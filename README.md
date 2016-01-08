@@ -8,6 +8,34 @@
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
+A bundler for node.js projects using [babel](http://babeljs.io/).
+Compiles all your _local_ files into a single script.
+
+## API
+
+### nodepack(options).then(js => )
+
+Options:
+
+- `filename` - entry file
+- `hash` - hash for the entire build for testing.
+  This should primarily be based on babel configs.
+- `presets` - an array of babel presets to use.
+- `plugins` - an array of babel plugins to use.
+
+### nodepack.cache.CACHE_DIR
+
+The location of the cache directory.
+You could also set it via `BABEL_NODEPACK_CACHE_DIR=`.
+
+### nodepack.cache.rimraf().then(() => )
+
+Clear the nodepack cache folder.
+
+### nodepack.cache.mkdirp().then(() => )
+
+Make sure the nodepack cache folder exists.
+
 [npm-image]: https://img.shields.io/npm/v/babel-nodepack.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/babel-nodepack
 [travis-image]: https://img.shields.io/travis/jonathanong/babel-nodepack.svg?style=flat-square
