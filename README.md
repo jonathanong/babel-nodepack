@@ -17,6 +17,10 @@ This differs from webpack/browserify in that:
 - Does not parse `node_modules` - it assumes modules will still be available
 - Only supports CommonJS build outputs
 
+## Features
+
+- Automatically caches builds to the local file system.
+
 ## Caveats
 
 - `__dirname` and `__filename` are not supported
