@@ -18,9 +18,9 @@ describe('Node Pack', () => {
         filename: root,
         hash,
         presets: ['es2015'],
-      }).then(code => {
-        new Function(code)
-        fs.writeFileSync(path.join(root, 'result.js'), code)
+      }).then(result => {
+        new Function(result.code)
+        fs.writeFileSync(path.join(root, 'result.js'), result.code)
       })
     })
 

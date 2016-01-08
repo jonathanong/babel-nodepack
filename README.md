@@ -9,11 +9,21 @@
 [![Downloads][downloads-image]][downloads-url]
 
 A bundler for node.js projects using [babel](http://babeljs.io/).
-Compiles all your _local_ files into a single script.
+Compiles all your _local_ files into a single script suitable for node.js usage.
+This differs from webpack/browserify in that:
+
+- It's much simpler
+- Only uses babel
+- Does not parse `node_modules` - it assumes modules will still be available
 
 ## API
 
-### nodepack(options).then(js => )
+### nodepack(options).then(result => )
+
+Returns:
+
+- `result.tree` - the dependency tree as an array
+- `result.code` - the JS code bundled together
 
 Options:
 
